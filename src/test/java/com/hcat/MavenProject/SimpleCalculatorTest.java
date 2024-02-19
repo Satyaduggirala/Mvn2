@@ -39,14 +39,14 @@ public class SimpleCalculatorTest extends TestCase
 		assertEquals(5,result);
 	}
 	
-	/* @Test
+	 @Test
 	    public void testDivisionByZero()
 	 {
 	        SimpleCalculator sc = new SimpleCalculator();
 	        
 	        // This test should throw an IllegalArgumentException
 	        
-	        assertThrows(IllegalArgumentException.class, () -> sc.divide(10, 0));
-	 }*/
+	        assertThrows(IllegalArgumentException.class, () -> sc.divide1(10, 0));
+	 }
 }
 
