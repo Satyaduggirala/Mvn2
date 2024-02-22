@@ -20,10 +20,24 @@ calculator applications.
 
 ## Usage
 
-1.Import the SimpleCalculator class into your Java project.
+- Import the SimpleCalculator class into your Java project.
 
-2.Create an instance of SimpleCalculator
+- Create an instance of SimpleCalculator
 
-3.Perform arithmetic operations
+- Perform arithmetic operations
 
-4.Explore other methods for subtraction, multiplication, and division
+- Explore other methods for subtraction, multiplication, and division
+
+
+## commands
+
+## maven commands
+
+- mvn clean install
+- mvn test
+- mvn compile
+
+## java commands
+
+- javac main.java
+- java main.java
