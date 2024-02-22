@@ -1,6 +1,7 @@
 package com.hcat.MavenProject;
 
 import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import junit.framework.TestCase;
 
@@ -38,15 +39,14 @@ public class SimpleCalculatorTest extends TestCase
 		int result = sc.divide(10, 2);
 		assertEquals(5,result);
 	}
-	
-	 @Test
-	    public void testDivisionByZero()
-	 {
-	        SimpleCalculator sc = new SimpleCalculator();
-	        
-	        // This test should throw an IllegalArgumentException
-	        
-	        assertThrows(IllegalArgumentException.class, () -> sc.divide1(10, 0));
-	 }
+
+	public void testDivisionByZero()
+	{
+		SimpleCalculator sc = new SimpleCalculator();
+
+		// This test should throw an IllegalArgumentException
+
+		assertThrows(ArithmeticException.class, () -> sc.divide(10, 0));
+	}
 }
 

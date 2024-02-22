@@ -16,9 +16,13 @@ public class SimpleCalculator
 	{
 		return numberA * numberB;
 	}
-	
+
 	public int divide(int numberA, int numberB)
 	{
+		if (numberB == 0)
+		{
+			throw new ArithmeticException("Division by zero");
+		}
 		return numberA / numberB;
 	}
 	
